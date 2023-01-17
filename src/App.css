@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+/* nav styles */
+nav {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3.5px solid var(--appRed);
+    transform: rotate(-3deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul {
+    list-style: none;
+    display: flex;
+    min-width: 550px;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Hero styles */
+section.hero {
+    min-height: 300px;
+    padding: 2.5rem;
+    background: var(--appLight);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.hero > div {
+    padding: 10px;
+}
+
+section.hero > div > h3 {
+    color: var(--appRed);
+}
+
+section.hero > div > h1 {
+    font-size: 4rem;
+    margin: 8px 0;
+}
+
+section.hero > div > p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--appGrey);
+}
+
+/* About section */
+section.about {
+    padding: 2rem;
+}
+
+section.about article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+section.about .content p {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: var(--appGrey);
+}
+
+section.about img {
+    width: 450px;
+}
+
+/* services section */
+section.services {
+    padding: 2rem;
+    /* background: var(--appLight); */
+}
+
+section.services article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 1rem 0;
+}
+
+section.services article .service {
+    max-width: 330px;
+    font-size: 1.1rem;
+    color: var(--appGrey);
+    line-height: 2rem;
+}
+
+section.services article .service h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* project section */
+section.projects {
+    padding: 1rem;
+}
+section.projects article {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+section.projects article img {
+    object-fit: fill;
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+}
+
+/* Contact section */
+
+section.contact form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #c7c6c6;
+    width: 100%;
+    max-width: 300px;
+}
+
+section.contact form button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--appRed);
+    color: white;
+}
+
+/* Footer section */
+footer {
+    padding: 2rem 1rem;
+}
+
+footer p {
+    text-align: center;
+    color: var(--appGrey);
 }
