@@ -2,7 +2,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <section className='services'>
+    <section className='services' id="services">
         <div className="container">
             <h2 className="title">Services</h2>
             <p className="center">I offer the following services</p>

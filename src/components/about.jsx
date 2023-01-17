@@ -3,7 +3,7 @@ import proImg from "../assets/white.jpg";
 
 function About() {
   return (
-    <section className='about'>
+    <section className='about' id="about">
         <div className="container">
             <h2 className="title">About</h2>
             <article>
